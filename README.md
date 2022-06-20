@@ -57,3 +57,22 @@ variable "security_groups" {
 ## Module Outputs
 
 `groups` - A list of each group created and the group ID
+
+## Example Usage
+
+```terraform
+##############################################################################
+# Security Groups
+##############################################################################
+
+module "security_groups" {
+  source            = "github.com/Cloud-Schematics/vpc-security-group-module"
+  prefix            = var.prefix
+  resource_group_id = data.ibm_resource_group.resource_group.id
+  tags              = var.tags
+  vpc_id            = ibm_is_vpc.vpc.id
+  security_groups   = var.security_groups
+}
+
+##############################################################################
+```
