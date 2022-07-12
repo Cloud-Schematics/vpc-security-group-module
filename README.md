@@ -7,9 +7,9 @@ Create any number of security groups and rules within those groups in a single V
 Name                                | Type                                                        | Description                                                                                                       | Sensitive | Default
 ----------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------
 prefix                              | string                                                      | The prefix that you would like to append to your resources                                                        |           | 
-resource_group_id                   | string                                                      | ID of the resource group where subnets will be provisioned                                                        |           | null
+resource_group_id                   | string                                                      | ID of the resource group where security groups will be provisioned                                                        |           | null
 tags                                | list(string)                                                | List of Tags for the resource created                                                                             |           | null
-vpc_id                              | string                                                      | ID of the VPC where subnets will be created                                                                       |           | 
+vpc_id                              | string                                                      | ID of the VPC where security groups will be created                                                                       |           | 
 
 ## Security Groups Variable 
 
